@@ -1,0 +1,92 @@
+/*!
+ * Body content
+ */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* error if tags without attr */
+img:not([alt]),
+label:not([for]),
+input[type=submit]:not([value]) {
+  outline: 1px dotted red;
+}
+
+/* error if first child not used  */
+ul > *:not(li),
+ol > *:not(li),
+dl > *:not(dt):not(dd) {
+  outline: 1px dotted red;
+}
+
+input:focus, textarea, a, button {
+  outline: none !important;
+  //-webkit-appearance: none !important; //trouble with radiobutton
+}
+
+.clearfix {
+
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#back-to-top {
+  color: $white;
+  width: 50px;
+  height: 50px;
+  background: $blue;
+  text-transform: uppercase;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+
+  &:hover {
+    background: $blue;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  transition: .3s;
+  text-transform: uppercase;
+
+  &:hover {
+    transition: .3s;
+  }
+}
+
+.btn-info {
+  color: #fff;
+  background-color: $blue;
+  border-color: $blue;
+
+  &:hover, .btn.focus, .btn:focus {
+    background: $blue-dark;
+    border-color: $blue-dark;
+  }
+}

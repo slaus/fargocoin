@@ -1,0 +1,85 @@
+/*!
+ * Header content
+ */
+
+.header {
+
+  &-img {
+
+    @media screen and (max-width: 991px) {
+      padding-top: 40px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .navbar-default .navbar-brand {
+      margin-top: -7px;
+    }
+
+    .nav>li {
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .navbar-default {
+    background-color: $grey;
+    border-color: $grey;
+
+    & .nav-phone {
+      margin-top: 5px;
+      color: $white;
+      font-size: 22px;
+      font-weight: 600;
+      transition: .3s;
+
+      &:hover, &:hover i {
+        transition: .3s;
+        color: $white;
+      }
+
+      & i {
+        transition: .3s;
+        color: $blue;
+        margin-right: 5px;
+      }
+
+      & span {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  .slogan {
+    background: $black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &-img {
+      width: 100%;
+      max-width: 950px;
+      padding: 20px;
+    }
+
+    &-more {
+      padding: 20px;
+      color: $white;
+      font-size: 19px;
+      text-transform: uppercase;
+    }
+
+    &-button {
+      margin-left: 20px;
+      line-height: 40px;
+      font-size: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+  }
+}
