@@ -4,7 +4,7 @@
 if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['message']) ) {
 
 	//$to = "mister.slaus@gmail.com";	// receiver of the email
-        $to="mister.slaus@gmail.com";
+        $to="buisnessinternet.ru@gmail.com";
         $subject = "Сообщение с сайта fargocoin";			// subject of the email
 	$message = '
 	<html>
